@@ -1,5 +1,16 @@
-.page__header {
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 3rem;
+.header {
+  &_nav {
+    &_list {
+      width: 60%;
+      display: flex;
+      justify-content: space-between;
+
+      cursor: pointer;
+
+      margin-bottom: 3rem;
+      &-title:hover {
+        color: $color-yellow-light;
+      }
+    }
+  }
 }

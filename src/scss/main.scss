@@ -1,8 +1,17 @@
-@import 'core/variables';
-@import 'core/reset';
-@import 'components/code';
-@import 'components/links';
-@import 'layout/page';
-@import 'layout/header';
-@import 'layout/footer';
-@import 'pages/index';
+// Core
+@import "core/variables";
+@import "core/reset";
+@import "core/mixins";
+
+// Layout
+@import "layout/header";
+@import "layout/photo";
+@import "layout/education";
+@import "layout/profesional";
+@import "layout/experience";
+@import "layout/portfolio";
+@import "layout/contact";
+@import "layout/footer";
+
+// Pages
+@import "pages/index";
