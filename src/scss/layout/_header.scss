@@ -1,16 +1,84 @@
 .header {
+  width: 100%;
+  height: 60px;
+  background-color: $color-grey-dark;
+  @include tablet {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 40px 20px;
+  }
+  // Menu hamburguesa
+  &_hamburger {
+    position: fixed;
+    background-color: transparent;
+    padding: 20px 20px;
+
+    transition: transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+    z-index: 1002;
+    cursor: pointer;
+
+    &-line {
+      background: white;
+      margin-bottom: 4px;
+      border-radius: 2px;
+      width: 28px;
+      height: 4px;
+      opacity: 1;
+      transition: all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+    }
+    //Hover hamburguesa
+    &:hover .top {
+      transform: translateY(-100%);
+    }
+    &:hover .bottom {
+      transform: translateY(100%);
+    }
+  }
+
+  //Hamburguesa active
+  &_hamburger.is-active .top {
+    transform: translateY(200%) rotate(45deg);
+  }
+  &_hamburger.is-active .mid {
+    opacity: 0;
+  }
+  &_hamburger.is-active .bottom {
+    transform: translateY(-200%) rotate(135deg);
+  }
+  &_nav.is_active {
+    transform: translate3d(0px, 0px, 0px);
+  }
+
+  // Menu desplegable
   &_nav {
+    background-color: $color-grey-dark;
+    height: 100vh;
+    position: fixed;
+    transform: translate3d(0px, -100%, 0px);
+    transition: transform 0.35s cubic-bezier(0.05, 1.04, 0.72, 0.98) 0s;
+    width: 100%;
+    z-index: 1001;
+    &_list {
+      &-title {
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.5rem;
+        padding: 20px;
+        a {
+          color: white;
+          &:hover {
+            color: $color-yellow-light;
+          }
+        }
+      }
+    }
+  }
+
+  // Menu completo tablet
+  /*&_nav {
     &_list {
       width: 60%;
       display: flex;
       justify-content: space-between;
-
-      cursor: pointer;
-
-      margin-bottom: 3rem;
-      &-title:hover {
-        color: $color-yellow-light;
-      }
     }
-  }
+  }*/
 }
