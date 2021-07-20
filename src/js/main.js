@@ -1,9 +1,7 @@
 "use strict";
 
-console.log(">> Ready :)");
-
 // selector
-var menu = document.querySelector(".js-hamburger");
+const menu = document.querySelector(".js-hamburger");
 
 // method
 function toggleMenu(event) {
