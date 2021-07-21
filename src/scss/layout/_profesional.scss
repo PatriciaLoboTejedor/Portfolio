@@ -2,7 +2,6 @@
   background-image: url("./../images/profesional.png");
   background-size: cover;
   background-position: center center;
-  color: white;
   &_title {
     text-align: center;
     font-weight: 900;
@@ -23,7 +22,7 @@
       padding-bottom: 10px;
     }
     &-list {
-      padding: 0px 15px 10px 15px;
+      padding: 0px 15px 0px 15px;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
@@ -45,22 +44,28 @@
       padding-bottom: 10px;
     }
     &-list {
-      padding: 0px 15px 10px 15px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+      padding: 0px 15px 20px 15px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
       &-element {
         padding: 5px 10px;
-        text-align: center;
         font-size: 14px;
         div {
           font-size: 12px;
-          text-align: left;
           padding-left: 5px;
-          width: 80%;
           height: 15px;
           background-color: $color-yellow-light;
           color: $color-grey-dark;
+        }
+        .line95 {
+          width: 95%;
+        }
+        .line90 {
+          width: 90%;
+        }
+        .line70 {
+          width: 70%;
         }
       }
     }
@@ -70,17 +75,16 @@
     padding: 15px;
     &-title {
       color: $color-yellow-light;
-      padding-bottom: 10px;
       position: absolute;
-      padding-left: 20px;
+      padding: 10px;
       height: 100px;
       transform: rotate(-90deg);
     }
     &-list {
-      padding: 0px 15px 10px 15px;
       text-align: center;
       &-element {
         padding: 5px 10px;
+        font-weight: lighter;
         text-align: center;
         font-size: 14px;
         div {
