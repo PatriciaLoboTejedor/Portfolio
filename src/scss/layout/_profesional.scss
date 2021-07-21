@@ -1,1 +1,17 @@
+.main_sectionProfesional {
+  background-image: url("./../images/profesional.jpg");
+  background-size: cover;
+  background-position: center center;
+  color: white;
+  &_title {
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 20px;
 
+    padding: 15px;
+    span {
+      color: $color-yellow-light;
+    }
+  }
+}

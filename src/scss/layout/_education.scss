@@ -1,0 +1,51 @@
+.main_sectionEducation {
+  background-color: $color-grey-dark;
+  color: white;
+  &-title {
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 20px;
+
+    padding: 15px;
+    span {
+      color: $color-yellow-light;
+    }
+  }
+  &-list {
+    color: $color-grey-dark;
+    padding-bottom: 15px;
+    span {
+      font-weight: bolder;
+    }
+    .elementList {
+      padding: 7.5px 15px;
+      &-date {
+        font-size: 12px;
+
+        border-bottom: solid 1px black;
+        padding: 5px 0px;
+        opacity: 0.8;
+      }
+      &-location {
+        font-size: 14px;
+        padding: 2.5px 0px 2.5px 0px;
+      }
+      &-description {
+        font-size: 12px;
+        padding: 5px 0px 0px 10px;
+      }
+    }
+
+    // Diferentes colores de fondo
+    &-element1 {
+      background-color: $color-yellow-light;
+    }
+    &-element2 {
+      background-color: $color-yellow-medium;
+    }
+    &-element3 {
+      background-color: $color-yellow-dark;
+    }
+  }
+}

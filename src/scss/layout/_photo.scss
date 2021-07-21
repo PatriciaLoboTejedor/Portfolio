@@ -1,9 +1,11 @@
 .main_sectionPhoto {
-  padding: 16px;
+  padding: 15px;
 
   background-image: url("./../images/headerPhoto.jpg");
   background-size: cover;
-  background-position: 610px center;
+  background-position: 590px center;
+
+  color: $color-grey-dark;
   &-wrap {
     width: 60%;
     &-title {
@@ -26,7 +28,7 @@
       padding-bottom: 15px;
     }
     &-description {
-      font-size: 10px;
+      font-size: 9px;
       font-weight: inherit;
       letter-spacing: 1px;
       text-align: justify;
