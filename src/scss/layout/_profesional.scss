@@ -1,17 +1,98 @@
 .main_sectionProfesional {
-  background-image: url("./../images/profesional.jpg");
+  background-image: url("./../images/profesional.png");
   background-size: cover;
   background-position: center center;
   color: white;
   &_title {
     text-align: center;
-    font-weight: bold;
+    font-weight: 900;
+    letter-spacing: 3px;
     text-transform: uppercase;
     font-size: 20px;
 
     padding: 15px;
     span {
+      color: black;
+    }
+  }
+  &_developmentSoftware {
+    margin-bottom: 20px;
+    &-title {
+      text-align: center;
+      font-weight: lighter;
+      padding-bottom: 10px;
+    }
+    &-list {
+      padding: 0px 15px 10px 15px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      &-element {
+        padding: 5px 10px;
+        text-align: center;
+        i {
+          padding-right: 5px;
+          color: $color-yellow-light;
+        }
+      }
+    }
+  }
+  &_designSoftware {
+    &-title {
+      text-align: center;
+      font-weight: lighter;
+      padding-bottom: 10px;
+    }
+    &-list {
+      padding: 0px 15px 10px 15px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      &-element {
+        padding: 5px 10px;
+        text-align: center;
+        font-size: 14px;
+        div {
+          font-size: 12px;
+          text-align: left;
+          padding-left: 5px;
+          width: 80%;
+          height: 15px;
+          background-color: $color-yellow-light;
+          color: $color-grey-dark;
+        }
+      }
+    }
+  }
+  &_skills {
+    background-color: $color-grey-dark;
+    padding: 15px;
+    &-title {
       color: $color-yellow-light;
+      padding-bottom: 10px;
+      position: absolute;
+      padding-left: 20px;
+      height: 100px;
+      transform: rotate(-90deg);
+    }
+    &-list {
+      padding: 0px 15px 10px 15px;
+      text-align: center;
+      &-element {
+        padding: 5px 10px;
+        text-align: center;
+        font-size: 14px;
+        div {
+          font-size: 12px;
+          text-align: left;
+          padding-left: 5px;
+          width: 80%;
+          height: 15px;
+          background-color: $color-yellow-light;
+          color: $color-grey-dark;
+        }
+      }
     }
   }
 }
