@@ -19,6 +19,9 @@
   &_list {
     padding: 0px 15px;
     &-element {
+      &:nth-child(even) {
+        text-align: right;
+      }
       &-date {
         color: $color-yellow-light;
         font-weight: bold;
@@ -35,7 +38,7 @@
         font-size: 14px;
         font-weight: lighter;
         padding-bottom: 20px;
-        text-align: justify;
+        /*text-align: justify;*/
       }
     }
   }
