@@ -1,0 +1,58 @@
+.main_sectionContact {
+  color: $color-grey-dark;
+  background-color: white;
+  &_title {
+    text-align: center;
+    font-weight: 900;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: $color-grey-dark;
+    padding: 15px;
+
+    span {
+      color: $color-yellow-light;
+    }
+  }
+  &_subtitle {
+    text-align: center;
+    font-weight: lighter;
+    padding-bottom: 10px;
+  }
+  &_list {
+    &-element {
+      padding: 20px;
+      text-align: center;
+      color: white;
+      i {
+        font-size: 34px;
+        padding-bottom: 10px;
+      }
+      a {
+        color: white;
+      }
+      &.mail {
+        background-image: url("./../images/contact.png");
+        background-size: cover;
+        background-position: center center;
+        background-color: white;
+        color: $color-grey-dark;
+        a {
+          color: $color-grey-dark;
+        }
+      }
+      &.phone {
+        background-image: url("./../images/phone.png");
+        background-size: cover;
+        background-position: center center;
+        background-color: $color-yellow-light;
+      }
+      &.linkedin {
+        background-image: url("./../images/linkedin.png");
+        background-size: cover;
+        background-position: center center;
+        background-color: $color-grey-light;
+      }
+    }
+  }
+}

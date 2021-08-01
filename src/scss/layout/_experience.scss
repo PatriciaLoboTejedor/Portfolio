@@ -17,6 +17,11 @@
     }
   }
   &_list {
+    @include tablet {
+      /*border-left: solid 2px $color-yellow-light;*/
+    }
+  }
+  &_list {
     padding: 0px 15px;
     &-element {
       &:nth-child(even) {
@@ -27,12 +32,14 @@
         font-weight: bold;
         font-size: 14px;
         padding-bottom: 5px;
+        text-transform: uppercase;
       }
       &-job {
-        padding-bottom: 10px;
+        padding-bottom: 5px;
       }
       &-company {
         padding-bottom: 5px;
+        font-weight: inherit;
       }
       &-description {
         font-size: 14px;
