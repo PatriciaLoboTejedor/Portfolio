@@ -1,6 +1,7 @@
 .main_sectionContact {
   color: $color-grey-dark;
   background-color: white;
+  padding-bottom: 15px;
   &_title {
     text-align: center;
     font-weight: 900;
@@ -30,6 +31,7 @@
       }
       a {
         color: white;
+        cursor: pointer;
       }
       &.mail {
         background-image: url("./../images/contact.png");

@@ -1,5 +1,6 @@
 .main_sectionPortfolio {
   background-color: $color-yellow-light;
+  padding-bottom: 10px;
   &_title {
     text-align: center;
     font-weight: 900;
@@ -31,6 +32,10 @@
     flex-wrap: wrap;
     &-element {
       padding: 15px;
+      background-color: $color-grey-dark;
+      border-radius: 5px;
+      margin: 10px;
+      text-align: center;
     }
   }
 }
