@@ -1,6 +1,6 @@
 .main_sectionPortfolio {
   background-color: $color-yellow-light;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
   scroll-margin-top: 50px;
   &_title {
     text-align: center;
@@ -16,13 +16,12 @@
     }
   }
   &_subtitle {
+    font-weight: normal;
     text-align: center;
-    font-weight: lighter;
     padding-bottom: 10px;
 
     a {
       color: $color-grey-dark;
-      font-weight: normal;
       cursor: pointer;
     }
   }
@@ -37,6 +36,32 @@
       border-radius: 5px;
       margin: 10px;
       text-align: center;
+      width: 240px;
+      h4 {
+        padding-bottom: 10px;
+        font-size: 16px;
+        font-weight: 400;
+        text-transform: uppercase;
+      }
+      img {
+        width: 100%;
+        border-radius: 5px;
+        margin-bottom: 10px;
+      }
+      p {
+        font-family: $font-thin;
+        font-weight: 100;
+        line-height: 14px;
+        font-size: 12px;
+      }
+      i {
+        padding: 15px 15px 0px 15px;
+        font-size: 24px;
+        color: white;
+        &:hover {
+          color: $color-yellow-light;
+        }
+      }
     }
   }
 }

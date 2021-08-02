@@ -6,11 +6,11 @@
   background-position: right center;
   height: 95vh;
   @include tablet {
-    padding: 100px 85px;
+    padding: 100px 60px;
   }
   @include desktop {
     background-image: url("./../images/headerPhoto.jpg");
-    padding: 160px 135px;
+    padding: 160px 90px;
   }
 
   scroll-margin-top: 50px;
