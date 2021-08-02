@@ -67,11 +67,11 @@
     &_list {
       padding: 80px 20px 20px 20px;
       // Menu completo tablet
-      @include tablet {
+      /*@include tablet {
         width: 60%;
         display: flex;
         justify-content: space-between;
-      }
+      }*/
       &-title {
         text-align: right;
         font-weight: bold;
