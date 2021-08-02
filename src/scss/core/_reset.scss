@@ -11,4 +11,8 @@ body {
   background-color: $color-grey-dark;
   font-family: $font-main;
   color: white;
+  scroll-margin-top: 50px;
+}
+html {
+  scroll-behavior: smooth;
 }

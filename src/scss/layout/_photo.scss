@@ -1,9 +1,10 @@
 .main_sectionPhoto {
   padding: 15px;
-
+  margin-top: 50px;
   background-image: url("./../images/headerPhoto.jpg");
   background-size: cover;
   background-position: 590px center;
+  scroll-margin-top: 50px;
 
   color: $color-grey-dark;
   &-wrap {
