@@ -3,63 +3,385 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Adalab Web Starter Kit</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    <title>Patii Lobo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/a22a8f4330.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="icon" href="./assets/images/favicon.png" />
   </head>
 
   <body>
     <div class="page">
-      <header class="page__header">
-        <img src="./assets/images/logo-adalab.png" alt="Adalab">
-        <h1>Bienvenidos a Adalab</h1>
+      <header class="header">
+        <div class="header_hamburger js-hamburger">
+          <div class="header_hamburger-line top"></div>
+          <div class="header_hamburger-line mid"></div>
+          <div class="header_hamburger-line bottom"></div>
+        </div>
+        <nav class="header_nav js-nav">
+          <ul class="header_nav_list">
+            <li class="header_nav_list-title">
+              <a href="./index.html#home">Home</a>
+            </li>
+            <li class="header_nav_list-title">
+              <a href="./index.html#education">Education</a>
+            </li>
+            <li class="header_nav_list-title">
+              <a href="./index.html#profesional">Profesional</a>
+            </li>
+            <li class="header_nav_list-title">
+              <a href="./index.html#experience">Experience</a>
+            </li>
+            <li class="header_nav_list-title">
+              <a href="./index.html#portfolio">Portfolio</a>
+            </li>
+            <li class="header_nav_list-title">
+              <a href="./index.html#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
       </header>
 
-      <main class="page__main">
-        <h2>Este es el starter kit de Adalab</h2>
-        <p>Lo usamos para aprender:</p>
-        <ul class="main__list">
-          <li>Sass</li>
-          <li>HTML partials</li>
-          <li>Gulp</li>
-          <li>y muchas cosas más</li>
-        </ul>
-        <p>Si quieres saber cúales son las rutas correctas para:</p>
-        <ul class="main__list">
-          <li>
-            una <code class="code">&lt;img /&gt;</code> mira el fichero
-            <code class="code">./src/html/partials/header.html</code>.
-          </li>
-          <li>
-            y para un <code class="code">background-image</code> mira el fichero
-            <code class="code">./src/html/scss/layout/_page.scss</code>.
-          </li>
-        </ul>
-        <p>
-          Si quieres saber cómo usar un partial HTML dentro de otro partial, busca en la carperta
-          <code class="code">./src/html/index.html</code> y
-          <code class="code">./src/html/partials/main.html</code>, y verás cómo estamos creando estos
-          enlaces:
-        </p>
-        <ul class="main__list">
-          <li>
-            <a class="link__adalab" href="https://adalab.es">Adalab</a>
+      <main class="main">
+        <section class="main_sectionPhoto" id="home">
+          <div class="main_sectionPhoto-wrap">
+            <h1 class="main_sectionPhoto-wrap-title">
+              I<span>'</span>M
+              <div>PATRICIA</div>
+              LOBO<span>.</span>
+            </h1>
+            <h2 class="main_sectionPhoto-wrap-subtitle">
+              FRONT END DEVELOPER
+              <span>& PROJECT MANAGER, PMP®</span>
+            </h2>
+            <p class="main_sectionPhoto-wrap-description">
+              Proactive person with ease and willingness to learn, good leadership and
+              relationships, responsible, creative, very organized with special
+              attention to detail, ability to perform large-scale jobs quickly and under
+              stress, interest in professional updating, ability to identify risks and
+              opportunities, effective communication skills and multidisciplinary
+              teamwork with tight deadlines and specific budgets.
+            </p>
+          </div>
+        </section>
 
-          </li>
-          <li>
-            <a class="" href="./more-info.html">Más info del starter kit</a>
+        <section class="main_sectionEducation" id="education">
+          <h3 class="main_sectionEducation-title"><span>01</span> Education</h3>
+          <ul class="main_sectionEducation-list">
+            <li class="main_sectionEducation-list-element1">
+              <div class="elementList">
+                <h4>Front End Development Bootcamp</h4>
+                <p class="elementList-date">Abril 2021 - Julio 2021</p>
+                <p class="elementList-location">Adalab Digital</p>
+                <ul class="elementList-description">
+                  <li>
+                    <span>Web Layout:</span> HTML5, CSS3, FlexBox, CSS Grid, Bootstrap,
+                    responsive design, SASS.
+                  </li>
+                  <li><span>JavaScript:</span> ES6, and web services (APIs).</li>
+                  <li>Version control with <span>Git</span></li>
+                  <li><span>React:</span> creation of simple SPA’S.</li>
+                  <li>
+                    <span>Back end:</span> applications with
+                    <span>Node JS, Express and SQL.</span>
+                  </li>
+                  <li>
+                    <span>Agile</span> philosophy <span>and Scrum</span> framework.
+                  </li>
+                  <li>
+                    <span>Tools:</span> Slack, GitHub, VS Code, Gulp, Terminal, Linter,
+                    Zeplin.
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="main_sectionEducation-list-element2">
+              <div class="elementList">
+                <h4>Certification: Project Management PMP®</h4>
+                <p class="elementList-date">September 2020 - September 2023</p>
+                <p class="elementList-location">Project Management institute PMI</p>
+              </div>
+            </li>
+            <li class="main_sectionEducation-list-element2">
+              <div class="elementList">
+                <h4>PM Course: Direction and management of projects, PMP</h4>
+                <p class="elementList-date">June 2020 - July 2020</p>
+                <p class="elementList-location">Cámara de comercio de Madrid</p>
+              </div>
+            </li>
+            <li class="main_sectionEducation-list-element3">
+              <div class="elementList">
+                <h4>Infoarchitecture: 3Dmax + Vray</h4>
+                <p class="elementList-date">September 2013 - June 2014</p>
+                <p class="elementList-location">480hours online course</p>
+              </div>
+            </li>
+            <li class="main_sectionEducation-list-element3">
+              <div class="elementList">
+                <h4>Interior Design Degree</h4>
+                <p class="elementList-date">September 2010 - June 2014</p>
+                <p class="elementList-location">ESNE - Universidad Camilo José Cela</p>
+              </div>
+            </li>
+          </ul>
+        </section>
 
-          </li>
-        </ul>
+        <section class="main_sectionProfesional" id="profesional">
+          <h3 class="main_sectionProfesional_title"><span>02</span> Profesional</h3>
+          <article class="main_sectionProfesional_developmentSoftware">
+            <h3 class="main_sectionProfesional_developmentSoftware-title">
+              Development Software & Tools
+            </h3>
+            <ul class="main_sectionProfesional_developmentSoftware-list">
+              <li class="main_sectionProfesional_developmentSoftware-list-element">
+                <i class="fab fa-html5"></i> HTML
+              </li>
+              <li class="main_sectionProfesional_developmentSoftware-list-element">
+                <i class="fab fa-css3-alt"></i>CSS
+              </li>
+              <li class="main_sectionProfesional_developmentSoftware-list-element">
+                <i class="fab fa-js"></i>JAVASCRIPT
+              </li>
+              <li class="main_sectionProfesional_developmentSoftware-list-element">
+                <i class="fab fa-react"></i>REACT
+              </li>
+              <li class="main_sectionProfesional_developmentSoftware-list-element">
+                <i class="fab fa-node-js"></i>NODE JS
+              </li>
+              <li class="main_sectionProfesional_developmentSoftware-list-element">
+                <i class="fas fa-database"></i> SQL
+              </li>
+              <li class="main_sectionProfesional_developmentSoftware-list-element">
+                <i class="fab fa-github"></i> GIT HUB
+              </li>
+            </ul>
+          </article>
+          <article class="main_sectionProfesional_designSoftware">
+            <h3 class="main_sectionProfesional_designSoftware-title">
+              Design Software
+            </h3>
+            <ul class="main_sectionProfesional_designSoftware-list">
+              <li class="main_sectionProfesional_designSoftware-list-element">
+                <p>AUTOCAD 2D</p>
+                <div class="line95">95%</div>
+              </li>
+              <li class="main_sectionProfesional_designSoftware-list-element">
+                <p>3D MAX + VRAY</p>
+                <div class="line90">90%</div>
+              </li>
+              <li class="main_sectionProfesional_designSoftware-list-element">
+                <p>ILLUSTRATOR</p>
+                <div class="line95">95%</div>
+              </li>
+              <li class="main_sectionProfesional_designSoftware-list-element">
+                <p>PHOTOSHOP</p>
+                <div class="line95">95%</div>
+              </li>
+              <li class="main_sectionProfesional_designSoftware-list-element">
+                <p>MS OFFICE</p>
+                <div class="line90">90%</div>
+              </li>
+              <li class="main_sectionProfesional_designSoftware-list-element">
+                <p>IN DESIGN</p>
+                <div class="line70">70%</div>
+              </li>
+            </ul>
+          </article>
+          <article class="main_sectionProfesional_skills">
+            <h3 class="main_sectionProfesional_skills-title">Soft skills</h3>
+            <ul class="main_sectionProfesional_skills-list">
+              <li class="main_sectionProfesional_skills-list-element">
+                Technical profile
+              </li>
+              <li class="main_sectionProfesional_skills-list-element">
+                Communicative skills
+              </li>
+              <li class="main_sectionProfesional_skills-list-element">Leadership</li>
+              <li class="main_sectionProfesional_skills-list-element">Creative</li>
+              <li class="main_sectionProfesional_skills-list-element">
+                Team work & coordination
+              </li>
+              <li class="main_sectionProfesional_skills-list-element">
+                Problem solving
+              </li>
+              <li class="main_sectionProfesional_skills-list-element">
+                Customer orientation
+              </li>
+              <li class="main_sectionProfesional_skills-list-element">Multitask</li>
+              <li class="main_sectionProfesional_skills-list-element">
+                Organizational skills
+              </li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="main_sectionExperience" id="experience">
+          <h3 class="main_sectionExperience_title">
+            <span class="">03</span> Experience
+          </h3>
+          <div class="main_sectionExperience_line"></div>
+          <ul class="main_sectionExperience_list">
+            <li class="main_sectionExperience_list-element">
+              <p class="main_sectionExperience_list-element-date">Dec 2019 - Present</p>
+              <h4 class="main_sectionExperience_list-element-job">
+                Senior project manager & designer
+              </h4>
+              <h5 class="main_sectionExperience_list-element-company">
+                Trazos y Tendencias
+              </h5>
+              <p class="main_sectionExperience_list-element-description">
+                Full project production within the scope of ephemeral architecture
+                (events, retail, commercial interior design ...). Direction and
+                leadership of technical work teams. Management of all process areas, in
+                terms of time schedule, costs, quality ...
+              </p>
+            </li>
+            <li class="main_sectionExperience_list-element">
+              <p class="main_sectionExperience_list-element-date">Aug17 - Dic19</p>
+              <h4 class="main_sectionExperience_list-element-job">
+                Project manager & designer
+              </h4>
+              <h5 class="main_sectionExperience_list-element-company">
+                J.F Construferial
+              </h5>
+              <p class="main_sectionExperience_list-element-description">
+                Monitoring the simultaneous projects evolutions, coordinating the
+                different stakeholders, including purchases and suppliers. Great
+                autonomous character and level of responsibility, always applying the
+                established methods.
+              </p>
+            </li>
+            <li class="main_sectionExperience_list-element">
+              <p class="main_sectionExperience_list-element-date">Sep15 - Nov17</p>
+              <h4 class="main_sectionExperience_list-element-job">
+                Interior and graphic designer
+              </h4>
+              <h5 class="main_sectionExperience_list-element-company">Freelance</h5>
+              <p class="main_sectionExperience_list-element-description">
+                Project design for marketing agencies with project presentation through
+                3d infographics and descriptive reports; graphic design for publicity
+                elements and full technical planimetric development for the
+                construction.
+              </p>
+            </li>
+            <li class="main_sectionExperience_list-element">
+              <p class="main_sectionExperience_list-element-date">Aug14 - Jul17</p>
+              <h4 class="main_sectionExperience_list-element-job">Interior designer</h4>
+              <h5 class="main_sectionExperience_list-element-company">
+                Majica Artes Visuales
+              </h5>
+              <p class="main_sectionExperience_list-element-description"></p>
+            </li>
+            <li class="main_sectionExperience_list-element">
+              <p class="main_sectionExperience_list-element-date">Oct12 - Jul14</p>
+              <h4 class="main_sectionExperience_list-element-job">
+                Junior interior designer
+              </h4>
+              <h5 class="main_sectionExperience_list-element-company">ESNE Ensemble</h5>
+              <p class="main_sectionExperience_list-element-description"></p>
+            </li>
+          </ul>
+        </section>
+
+        <section class="main_sectionPortfolio" id="portfolio">
+          <h3 class="main_sectionPortfolio_title">
+            <span class="">04</span> Portfolio
+          </h3>
+          <h4 class="main_sectionPortfolio_subtitle">
+            My latest work. <a href="../portfolio.html">See more ></a>
+          </h4>
+          <ul class="main_sectionPortfolio_list">
+            <li class="main_sectionPortfolio_list-element">
+              <h4>Project</h4>
+              <img src="images/shows-search.png" alt="project01" />
+              <p>Description</p>
+              <i class="fas fa-file-code"></i>
+              <i class="far fa-window-restore"></i>
+            </li>
+            <li class="main_sectionPortfolio_list-element">
+              <h4>Project</h4>
+              <img src="" alt="project02" />
+              <p>Description</p>
+              <i class="fas fa-file-code"></i>
+              <i class="far fa-window-restore"></i>
+            </li>
+            <li class="main_sectionPortfolio_list-element">
+              <h4>Project</h4>
+              <img src="" alt="project03" />
+              <p>Description</p>
+              <i class="fas fa-file-code"></i>
+              <i class="far fa-window-restore"></i>
+            </li>
+            <li class="main_sectionPortfolio_list-element">
+              <h4>Project</h4>
+              <img src="" alt="project04" />
+              <p>Description</p>
+              <i class="fas fa-file-code"></i>
+              <i class="far fa-window-restore"></i>
+            </li>
+            <li class="main_sectionPortfolio_list-element">
+              <h4>Project</h4>
+              <img src="" alt="project05" />
+              <p>Description</p>
+              <i class="fas fa-file-code"></i>
+              <i class="far fa-window-restore"></i>
+            </li>
+            <li class="main_sectionPortfolio_list-element">
+              <h4>Project</h4>
+              <img src="" alt="project06" />
+              <p>Description</p>
+              <i class="fas fa-file-code"></i>
+              <i class="far fa-window-restore"></i>
+            </li>
+            <li class="main_sectionPortfolio_list-element">
+              <h4>Project</h4>
+              <img src="" alt="project07" />
+              <p>Description</p>
+              <i class="fas fa-file-code"></i>
+              <i class="far fa-window-restore"></i>
+            </li>
+          </ul>
+        </section>
+
+        <section class="main_sectionContact" id="contact">
+          <h3 class="main_sectionContact_title"><span class="">05</span> Contact</h3>
+          <p class="main_sectionContact_subtitle">I'd love to hear from you</p>
+          <ul class="main_sectionContact_list">
+            <li class="main_sectionContact_list-element mail">
+              <a href="mailto:patricialobotejedor@gmail.com">
+                <i class="far fa-paper-plane"></i>
+                <p>patricialobotejedor@gmail.com</p>
+              </a>
+            </li>
+            <li class="main_sectionContact_list-element phone">
+              <a href="tel:636311105">
+                <i class="fas fa-mobile-alt"></i>
+                <p>+34 636 31 11 05</p>
+              </a>
+            </li>
+            <li class="main_sectionContact_list-element linkedin">
+              <a
+                href="https://www.linkedin.com/in/patricia-lobo-tejedor/"
+                target="_blank"
+              >
+                <i class="fab fa-linkedin"></i>
+                <p>Linkedin</p>
+              </a>
+            </li>
+          </ul>
+        </section>
+
       </main>
-
-      <footer class="page__footer">
-        <small>
-          &copy; Todos los derechos reservados
-          <a class="link__adalab" href="https://adalab.es">Adalab</a>
-
-        </small>
+      <footer class="footer">
+        <small> &copy; 2021 by Patricia Lobo. All rights reserved </small>
       </footer>
 
     </div>

@@ -1,1 +1,1 @@
-"use strict";console.log(">> Ready :)");
+"use strict";const menu=document.querySelector(".js-hamburger");function toggleMenu(e){this.classList.toggle("is-active"),document.querySelector(".js-nav").classList.toggle("is_active"),e.preventDefault()}menu.addEventListener("click",toggleMenu,!1);
