@@ -1,23 +1,23 @@
 .main_sectionPhoto {
-  padding: 40px 15px;
+  padding: 40px 30px;
   margin-top: 50px;
   background-image: url("./../images/headerPhotosmall.jpg");
   background-size: cover;
   background-position: right center;
   height: 95vh;
   @include tablet {
-    padding: 90px 75px;
+    padding: 100px 85px;
   }
   @include desktop {
     background-image: url("./../images/headerPhoto.jpg");
-    padding: 150px 135px;
+    padding: 160px 135px;
   }
 
   scroll-margin-top: 50px;
 
   color: $color-grey-dark;
   &-wrap {
-    width: 50%;
+    width: 55%;
     @include tablet {
       width: 60%;
     }
@@ -44,8 +44,8 @@
       }
     }
     &-subtitle {
+      font-family: $font-thin;
       font-size: 14px;
-      font-weight: inherit;
       line-height: 24px;
       letter-spacing: 3px;
 
@@ -59,13 +59,18 @@
       }
     }
     &-description {
+      font-family: $font-thin;
       font-size: 9px;
-      font-weight: inherit;
       letter-spacing: 1px;
       text-align: justify;
+      width: 85%;
       @include tablet {
         font-size: 16px;
         letter-spacing: 2px;
+      }
+      @include desktop {
+        font-size: 18px;
+        letter-spacing: 3px;
       }
     }
   }
