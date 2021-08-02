@@ -3,7 +3,7 @@
 // selector
 const menu = document.querySelector(".js-hamburger");
 
-// method
+// function
 function toggleMenu(event) {
   this.classList.toggle("is-active");
   document.querySelector(".js-nav").classList.toggle("is_active");

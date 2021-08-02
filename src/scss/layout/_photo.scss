@@ -1,38 +1,90 @@
 .main_sectionPhoto {
-  padding: 15px;
+  padding: 30px 15px;
   margin-top: 50px;
   background-image: url("./../images/headerPhoto.jpg");
   background-size: cover;
-  background-position: 590px center;
+  background-position: 690px center;
+  height: 95vh;
+
+  @media (min-width: 414px) {
+    background-position: 880px center;
+    padding: 50px 15px;
+  }
+  @include tablet {
+    background-position: 1400px center;
+    padding: 70px 60px;
+  }
   scroll-margin-top: 50px;
 
   color: $color-grey-dark;
   &-wrap {
-    width: 60%;
+    width: 55%;
+    @include tablet {
+      width: 60%;
+    }
     &-title {
       font-size: 30px;
       letter-spacing: 10px;
       line-height: 40px;
       font-weight: 900;
 
-      padding-bottom: 15px;
+      padding-bottom: 20px;
       span {
         color: $color-yellow-light;
       }
+      @media (min-width: 414px) {
+        font-size: 40px;
+        letter-spacing: 12px;
+        line-height: 50px;
+        font-weight: 900;
+
+        padding-bottom: 25px;
+      }
+      @include tablet {
+        font-size: 80px;
+        letter-spacing: 15px;
+        line-height: 100px;
+        font-weight: 900;
+
+        padding-bottom: 50px;
+      }
     }
     &-subtitle {
-      font-size: 12px;
+      font-size: 14px;
       font-weight: inherit;
-      line-height: 20px;
+      line-height: 24px;
       letter-spacing: 3px;
 
-      padding-bottom: 15px;
+      padding-bottom: 20px;
+      @media (min-width: 414px) {
+        font-size: 18px;
+        letter-spacing: 4px;
+        line-height: 32px;
+
+        padding-bottom: 25px;
+      }
+      @include tablet {
+        font-size: 24px;
+        line-height: 40px;
+        letter-spacing: 6px;
+
+        padding-bottom: 50px;
+      }
     }
     &-description {
       font-size: 9px;
       font-weight: inherit;
       letter-spacing: 1px;
       text-align: justify;
+      @media (min-width: 414px) {
+        font-size: 12px;
+        letter-spacing: 1.5px;
+        width: 85%;
+      }
+      @include tablet {
+        font-size: 16px;
+        letter-spacing: 2px;
+      }
     }
   }
 }

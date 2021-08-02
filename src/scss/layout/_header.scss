@@ -5,10 +5,11 @@
   position: fixed;
   top: 0px;
 
-  @include tablet {
+  /*@include tablet {
     background-color: rgba(255, 255, 255, 0.5);
     padding: 40px 20px;
-  }
+  }*/
+
   // Menu hamburguesa
   &_hamburger {
     position: absolute;
@@ -65,6 +66,12 @@
     z-index: 1001;
     &_list {
       padding: 80px 20px 20px 20px;
+      // Menu completo tablet
+      @include tablet {
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+      }
       &-title {
         text-align: right;
         font-weight: bold;
@@ -80,13 +87,4 @@
       }
     }
   }
-
-  // Menu completo tablet
-  /*&_nav {
-    &_list {
-      width: 60%;
-      display: flex;
-      justify-content: space-between;
-    }
-  }*/
 }

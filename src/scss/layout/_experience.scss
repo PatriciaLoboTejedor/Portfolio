@@ -17,16 +17,29 @@
       color: $color-grey-dark;
     }
   }
-  &_list {
+  &_line {
     @include tablet {
-      /*border-left: solid 2px $color-yellow-light;*/
+      border-left: solid 2px $color-yellow-light;
+      position: relative;
+      left: 50%;
     }
   }
   &_list {
     padding: 0px 15px;
     &-element {
       &:nth-child(even) {
+        text-align: left;
+        @include tablet {
+          margin-left: 50%;
+          padding-left: 30px;
+        }
+      }
+      &:nth-child(odd) {
         text-align: right;
+        @include tablet {
+          margin-right: 50%;
+          padding-right: 30px;
+        }
       }
       &-date {
         color: $color-yellow-light;
@@ -46,7 +59,6 @@
         font-size: 14px;
         font-weight: lighter;
         padding-bottom: 20px;
-        /*text-align: justify;*/
       }
     }
   }
