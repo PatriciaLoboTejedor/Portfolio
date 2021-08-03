@@ -24,9 +24,10 @@
   &_line {
     @include tablet {
       border: solid 1px $color-yellow-light;
-      position: relative;
-      top: 430px;
-      transform: rotate(90deg);
+      position: absolute;
+      left: 50%;
+      width: 100%;
+      /*transform: rotate(90deg);*/
     }
   }
   &_list {
