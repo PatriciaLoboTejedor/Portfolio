@@ -4,6 +4,7 @@
   background-color: $color-grey-dark;
   position: fixed;
   top: 0px;
+  z-index: 99;
 
   /*@include tablet {
     background-color: rgba(255, 255, 255, 0.5);

@@ -4,9 +4,10 @@
   background-image: url("./../images/headerPhotosmall.jpg");
   background-size: cover;
   background-position: right center;
-  height: 95vh;
+  height: 80vh;
   @include tablet {
     padding: 100px 60px;
+    height: 95vh;
   }
   @include desktop {
     background-image: url("./../images/headerPhoto.jpg");

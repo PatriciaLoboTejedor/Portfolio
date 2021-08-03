@@ -23,13 +23,13 @@
   }
   &_line {
     @include tablet {
-      border-left: solid 2px $color-yellow-light;
+      border: solid 1px $color-yellow-light;
       position: relative;
-      left: 50%;
+      top: 430px;
+      transform: rotate(90deg);
     }
   }
   &_list {
-    padding: 0px 15px;
     &-element {
       &:nth-child(even) {
         text-align: left;
@@ -65,6 +65,7 @@
         font-size: 14px;
         font-weight: lighter;
         padding-bottom: 20px;
+        text-align: justify;
       }
     }
   }
