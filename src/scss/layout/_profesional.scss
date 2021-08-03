@@ -97,6 +97,7 @@
       width: 80vw;
       font-size: 1rem;
       height: 130px;
+      padding: 25px;
     }
     &-title {
       color: $color-yellow-light;
@@ -104,6 +105,10 @@
       padding: 10px;
       height: 100px;
       transform: rotate(-90deg);
+      @include tablet {
+        padding: 0px;
+        height: 80px;
+      }
     }
     &-list {
       text-align: center;

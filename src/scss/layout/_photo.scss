@@ -40,7 +40,7 @@
         line-height: 100px;
         font-weight: 900;
 
-        padding-bottom: 60px;
+        padding-bottom: 80px;
       }
     }
     &-subtitle {
@@ -55,7 +55,7 @@
         line-height: 40px;
         letter-spacing: 6px;
 
-        padding-bottom: 60px;
+        padding-bottom: 80px;
       }
     }
     &-description {
@@ -63,9 +63,9 @@
       font-size: 9px;
       letter-spacing: 1px;
       text-align: justify;
-      width: 85%;
+      width: 90%;
       @include tablet {
-        font-size: 16px;
+        font-size: 14px;
         letter-spacing: 2px;
       }
       @include desktop {

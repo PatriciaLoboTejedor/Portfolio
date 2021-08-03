@@ -2,6 +2,9 @@
   background-color: $color-yellow-light;
   padding-bottom: 15px;
   scroll-margin-top: 50px;
+  @include tablet {
+    padding-bottom: 20px;
+  }
   &_title {
     text-align: center;
     font-weight: 900;
@@ -10,9 +13,12 @@
     font-size: 20px;
     color: white;
     padding: 15px;
-
     span {
       color: $color-grey-dark;
+    }
+    @include tablet {
+      font-size: 36px;
+      padding: 30px;
     }
   }
   &_subtitle {
@@ -24,12 +30,17 @@
       color: $color-grey-dark;
       cursor: pointer;
     }
+    @include tablet {
+      font-size: 1.2rem;
+      padding-bottom: 20px;
+    }
   }
   &_list {
     padding: 0px 15px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+
     &-element {
       padding: 15px;
       background-color: $color-grey-dark;

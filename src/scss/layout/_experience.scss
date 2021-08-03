@@ -16,6 +16,10 @@
     span {
       color: $color-grey-dark;
     }
+    @include tablet {
+      font-size: 36px;
+      padding: 30px;
+    }
   }
   &_line {
     @include tablet {
@@ -32,6 +36,7 @@
         @include tablet {
           margin-left: 50%;
           padding-left: 30px;
+          padding-right: 100px;
         }
       }
       &:nth-child(odd) {
@@ -39,6 +44,7 @@
         @include tablet {
           margin-right: 50%;
           padding-right: 30px;
+          padding-left: 100px;
         }
       }
       &-date {

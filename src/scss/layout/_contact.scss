@@ -3,6 +3,9 @@
   background-color: white;
   padding-bottom: 15px;
   scroll-margin-top: 50px;
+  @include tablet {
+    padding-bottom: 30px;
+  }
   &_title {
     text-align: center;
     font-weight: 900;
@@ -11,24 +14,45 @@
     font-size: 20px;
     color: $color-grey-dark;
     padding: 15px;
-
     span {
       color: $color-yellow-light;
+    }
+    @include tablet {
+      font-size: 36px;
+      padding: 30px;
     }
   }
   &_subtitle {
     text-align: center;
     font-weight: lighter;
     padding-bottom: 10px;
+    @include tablet {
+      padding-bottom: 20px;
+      font-size: 18px;
+    }
   }
   &_list {
+    @include tablet {
+      display: grid;
+      grid-template-columns: repeat(3, 33.33%);
+      padding: 0 10%;
+    }
     &-element {
       padding: 20px;
       text-align: center;
       color: white;
+      @include tablet {
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
       i {
         font-size: 34px;
         padding-bottom: 10px;
+        @include tablet {
+          font-size: 46px;
+        }
       }
       a {
         color: white;
