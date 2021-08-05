@@ -1,17 +1,15 @@
 .main_sectionPhoto {
-  padding: 20px;
+  padding: 5%;
   margin-top: 50px;
   background-image: url("./../images/headerPhotomedium.jpg");
   background-size: cover;
   background-position: right center;
   /*height: 70vh;*/
   @include tablet {
-    padding: 60px 60px;
-    height: 95vh;
+    /*height: 95vh;*/
   }
   @include desktop {
     background-image: url("./../images/headerPhoto.jpg");
-    padding: 100px;
   }
 
   scroll-margin-top: 50px;
@@ -20,7 +18,7 @@
   &-wrap {
     width: 60%;
     @include desktop {
-      width: 45%;
+      width: 50%;
       max-width: 1280px;
     }
     &-title {
@@ -38,8 +36,6 @@
         letter-spacing: 15px;
         line-height: 100px;
         font-weight: 900;
-
-        padding-bottom: 8%;
       }
     }
     &-subtitle {
@@ -53,8 +49,6 @@
         font-size: 24px;
         line-height: 40px;
         letter-spacing: 5px;
-
-        padding-bottom: 8%;
       }
     }
     &-description {
