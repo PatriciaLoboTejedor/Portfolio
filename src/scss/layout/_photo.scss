@@ -7,7 +7,7 @@
   height: 70vh;
   @include tablet {
     padding: 100px 60px;
-    background-image: url("./../images/headerPhotosmall.jpg");
+    background-image: url("./../images/headerPhotomedium.jpg");
     height: 95vh;
   }
   @include desktop {
