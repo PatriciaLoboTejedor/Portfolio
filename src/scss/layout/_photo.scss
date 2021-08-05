@@ -1,18 +1,17 @@
 .main_sectionPhoto {
-  padding: 40px 20px;
+  padding: 20px;
   margin-top: 50px;
   background-image: url("./../images/headerPhotomedium.jpg");
   background-size: cover;
   background-position: right center;
-  height: 70vh;
+  /*height: 70vh;*/
   @include tablet {
-    padding: 100px 60px;
-    background-image: url("./../images/headerPhotomedium.jpg");
+    padding: 60px 60px;
     height: 95vh;
   }
   @include desktop {
     background-image: url("./../images/headerPhoto.jpg");
-    padding: 100px 100px;
+    padding: 100px;
   }
 
   scroll-margin-top: 50px;
@@ -30,7 +29,7 @@
       line-height: 40px;
       font-weight: 900;
 
-      padding-bottom: 20px;
+      padding-bottom: 5%;
       span {
         color: $color-yellow-light;
       }
@@ -40,7 +39,7 @@
         line-height: 100px;
         font-weight: 900;
 
-        padding-bottom: 60px;
+        padding-bottom: 8%;
       }
     }
     &-subtitle {
@@ -49,18 +48,18 @@
       line-height: 20px;
       letter-spacing: 3px;
 
-      padding-bottom: 20px;
+      padding-bottom: 5%;
       @include tablet {
         font-size: 24px;
         line-height: 40px;
         letter-spacing: 5px;
 
-        padding-bottom: 60px;
+        padding-bottom: 8%;
       }
     }
     &-description {
       font-family: $font-thin;
-      font-size: 9px;
+      font-size: 8px;
       letter-spacing: 1px;
       text-align: justify;
       width: 90%;
