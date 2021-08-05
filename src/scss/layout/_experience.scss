@@ -23,14 +23,11 @@
     }
   }
   &_line {
-    @include tablet {
-      border-top: solid 2px $color-yellow-light;
+    /*@include tablet {
+      border-top: solid 2px blue;
       position: relative;
-      margin: auto;
-      top: 100%;
-      width: 100%;
       transform: rotate(90deg);
-    }
+    }*/
   }
   &_list {
     padding: 0px 25px;
