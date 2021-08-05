@@ -5,6 +5,7 @@
   color: $color-grey-dark;
   background-color: white;
   scroll-margin-top: 50px;
+  padding-bottom: 30px;
 
   &_title {
     text-align: center;
@@ -22,24 +23,44 @@
       padding: 30px;
     }
   }
-  &_line {
-    /*@include tablet {
+  /*&_line {
+    @include tablet {
       border-top: solid 2px blue;
       position: relative;
       transform: rotate(90deg);
-    }*/
-  }
+    }
+  }*/
   &_list {
     padding: 0px 25px;
     max-width: 1200px;
     margin: auto;
     &-element {
+      &-dot {
+        @include tablet {
+          width: 15px;
+          height: 15px;
+          background-color: $color-yellow-light;
+          border-radius: 7.5px;
+          position: absolute;
+          left: 48.9%;
+        }
+        @include miniDesktop {
+          left: 49.2%;
+        }
+        @include desktop {
+          left: 49.55%;
+        }
+      }
       &:nth-child(even) {
         text-align: left;
         @include tablet {
-          margin-left: 50%;
+          margin-left: 49.78%;
           padding-left: 30px;
           padding-right: 100px;
+          border-left: solid 2px $color-yellow-light;
+        }
+        @include desktop {
+          margin-left: 49.82%;
         }
       }
       &:nth-child(odd) {
@@ -48,6 +69,10 @@
           margin-right: 50%;
           padding-right: 30px;
           padding-left: 100px;
+          border-right: solid 2px $color-yellow-light;
+          &.last {
+            border-right: solid 0px;
+          }
         }
       }
       &-date {
