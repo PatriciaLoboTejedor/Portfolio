@@ -21,15 +21,15 @@
       padding: 30px;
     }
   }
-  &_line {
+  /*&_line {
     @include tablet {
       border: solid 1px $color-yellow-light;
       position: absolute;
       left: 50%;
       width: 100%;
-      /*transform: rotate(90deg);*/
+      transform: rotate(90deg);
     }
-  }
+  }*/
   &_list {
     &-element {
       &:nth-child(even) {

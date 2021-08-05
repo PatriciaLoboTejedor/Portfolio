@@ -25,16 +25,21 @@
       color: black;
     }
   }
-  &_developmentSoftware {
-    margin-bottom: 20px;
+  &_developmentSoftware,
+  &_designSoftware {
+    margin-bottom: 25px;
     @include tablet {
       width: 80vw;
       font-size: 1rem;
     }
     &-title {
       text-align: center;
-      font-weight: lighter;
+      font-weight: 400;
+      color: $color-yellow-dark;
       padding-bottom: 10px;
+      @include tablet {
+        font-size: 22px;
+      }
     }
     &-list {
       padding: 0px 15px 0px 15px;
@@ -45,15 +50,20 @@
       &-element {
         padding: 5px 10px;
         text-align: center;
+        font-family: $font-thin;
+        font-weight: 400;
 
         i {
           padding-right: 5px;
           color: $color-yellow-light;
+          @include tablet {
+            font-size: 20px;
+          }
         }
       }
     }
   }
-  &_designSoftware {
+  /*&_designSoftware {
     @include tablet {
       width: 80vw;
       font-size: 1rem;
@@ -89,7 +99,7 @@
         }
       }
     }
-  }
+  }*/
   &_skills {
     background-color: $color-grey-dark;
     padding: 15px;

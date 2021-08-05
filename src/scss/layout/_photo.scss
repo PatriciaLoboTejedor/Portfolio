@@ -11,7 +11,7 @@
   }
   @include desktop {
     background-image: url("./../images/headerPhoto.jpg");
-    padding: 160px 90px;
+    padding: 100px 100px;
   }
 
   scroll-margin-top: 50px;
@@ -24,6 +24,7 @@
     }
     @include desktop {
       width: 45%;
+      max-width: 1280px;
     }
     &-title {
       font-size: 30px;
@@ -41,7 +42,7 @@
         line-height: 100px;
         font-weight: 900;
 
-        padding-bottom: 80px;
+        padding-bottom: 60px;
       }
     }
     &-subtitle {
@@ -54,9 +55,9 @@
       @include tablet {
         font-size: 24px;
         line-height: 40px;
-        letter-spacing: 6px;
+        letter-spacing: 5px;
 
-        padding-bottom: 80px;
+        padding-bottom: 60px;
       }
     }
     &-description {
@@ -67,11 +68,11 @@
       width: 90%;
       @include tablet {
         font-size: 14px;
-        letter-spacing: 2px;
+        letter-spacing: 1.5px;
       }
       @include desktop {
         font-size: 18px;
-        letter-spacing: 3px;
+        letter-spacing: 2px;
       }
     }
   }
