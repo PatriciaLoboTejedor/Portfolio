@@ -31,6 +31,8 @@
       padding-bottom: 30px;
     }
     .elementList {
+      max-width: 1000px;
+      margin: auto;
       padding: 7.5px 15px;
       @include tablet {
         width: 80vw;

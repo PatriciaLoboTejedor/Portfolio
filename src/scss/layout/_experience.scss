@@ -31,6 +31,8 @@
     }
   }*/
   &_list {
+    max-width: 1200px;
+    margin: auto;
     &-element {
       &:nth-child(even) {
         text-align: left;

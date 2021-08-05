@@ -46,7 +46,6 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-
       &-element {
         padding: 5px 10px;
         text-align: center;
@@ -63,46 +62,12 @@
       }
     }
   }
-  /*&_designSoftware {
-    @include tablet {
-      width: 80vw;
-      font-size: 1rem;
-    }
-    &-title {
-      text-align: center;
-      font-weight: lighter;
-      padding-bottom: 10px;
-    }
-    &-list {
-      padding: 0px 15px 20px 15px;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-
-      &-element {
-        padding: 5px 10px;
-        font-size: 14px;
-        div {
-          font-size: 12px;
-          padding-left: 5px;
-          height: 15px;
-          background-color: $color-yellow-light;
-          color: $color-grey-dark;
-        }
-        .line95 {
-          width: 95%;
-        }
-        .line90 {
-          width: 90%;
-        }
-        .line70 {
-          width: 70%;
-        }
-      }
-    }
-  }*/
   &_skills {
     background-color: $color-grey-dark;
     padding: 15px;
+
+    max-width: 1000px;
+    margin: auto;
     @include tablet {
       width: 80vw;
       font-size: 1rem;

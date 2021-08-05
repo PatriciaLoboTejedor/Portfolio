@@ -32,6 +32,8 @@
     }
   }
   &_list {
+    max-width: 1200px;
+    margin: auto;
     @include tablet {
       display: grid;
       grid-template-columns: repeat(3, 33.33%);
