@@ -22,15 +22,16 @@
       padding: 30px;
     }
   }
-  /*&_line {
+  &_line {
     @include tablet {
-      border: solid 1px $color-yellow-light;
-      position: absolute;
-      left: 50%;
+      border-top: solid 2px $color-yellow-light;
+      position: relative;
+      margin: auto;
+      top: 100%;
       width: 100%;
       transform: rotate(90deg);
     }
-  }*/
+  }
   &_list {
     padding: 0px 25px;
     max-width: 1200px;
