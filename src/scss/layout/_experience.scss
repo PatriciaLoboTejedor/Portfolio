@@ -5,6 +5,7 @@
   color: $color-grey-dark;
   background-color: white;
   scroll-margin-top: 50px;
+
   &_title {
     text-align: center;
     font-weight: 900;
@@ -31,6 +32,7 @@
     }
   }*/
   &_list {
+    padding: 0px 25px;
     max-width: 1200px;
     margin: auto;
     &-element {
